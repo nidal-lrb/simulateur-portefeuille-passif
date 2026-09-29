@@ -24,7 +24,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Simulateur de Portefeuille Passif",
-    description="API du projet DATA — M2 MIAGE 2025-2026",
+    description="API du projet DATA, M2 MIAGE 2025-2026",
     version="0.4.0",
 )
 
@@ -303,7 +303,7 @@ def details_explore(ticker_yf: str):
     return _fetch_details(ticker_yf)
 
 
-# ─── Simulation DCA — Backtesting ───────────────────────
+# ─── Simulation DCA : backtesting ─────────────────────
 
 @app.post("/simulation/", tags=["Simulation"])
 def creer_simulation(
@@ -425,7 +425,7 @@ def get_simulation(simulation_id: int, db: Session = Depends(get_db)):
     }
 
 
-# ─── Simulation DCA — Projection future ─────────────────
+# ─── Simulation DCA : projection future ───────────────
 
 @app.post("/simulation/projection/", tags=["Simulation"])
 def projeter_dca(
@@ -436,7 +436,7 @@ def projeter_dca(
     nb_annees: int = 20,
 ):
     """
-    Projection DCA future — calcul théorique pur, sans données historiques.
+    Projection DCA future : calcul théorique pur, sans données historiques.
     Retourne un seul scénario au taux_annuel fourni.
     Inclut la comparaison intérêts composés vs intérêts simples vs Livret A.
     """
@@ -492,7 +492,7 @@ def lancer_regression(body: RegressionBody, db: Session = Depends(get_db)):
     if not resultat:
         raise HTTPException(status_code=500, detail="Calcul de régression échoué.")
 
-    # Upsert — on remplace le résultat précédent pour (etf, fenetre)
+    # Upsert : on remplace le résultat précédent pour (etf, fenetre)
     db.query(ResultatRegression).filter(
         ResultatRegression.etf_id == etf.id,
         ResultatRegression.fenetre_annees == body.fenetre_annees,

@@ -1,5 +1,5 @@
 """
-Module B — Simulateur DCA.
+Module B : simulateur DCA.
 Backtesting historique + Projection future.
 """
 
@@ -7,7 +7,7 @@ import datetime
 from typing import List, Dict, Optional
 
 # CORRECTION : taux Livret A en vigueur depuis le 1er février 2026.
-# Historique : 3 % (fév 2023–jan 2025) → 2,4 % → 1,7 % → 1,5 % (fév 2026).
+# Historique : 3 % (fév 2023 à jan 2025) → 2,4 % → 1,7 % → 1,5 % (fév 2026).
 LIVRET_A_TAUX = 0.015
 
 
@@ -63,7 +63,7 @@ def simuler_dca(
         montant = versement_mensuel + (capital_initial if i == 0 else 0)
         capital_verse += montant
 
-        # Avec TER — conforme CDC §5.2 : valeur × (1 − TER/12)
+        # Avec TER : conforme CDC §5.2 : valeur × (1 − TER/12)
         parts_avec   += montant / prix
         frais_mois    = parts_avec * prix * ter_mensuel
         parts_avec   -= frais_mois / prix
@@ -81,7 +81,7 @@ def simuler_dca(
         parts_sans += montant / prix
         sans_ter.append({"date": pt["date"], "valeur": round(parts_sans * prix, 2)})
 
-        # Livret A — dépôt en début de mois, intérêts en fin de mois
+        # Livret A : dépôt en début de mois, intérêts en fin de mois
         valeur_livret = (valeur_livret + montant) * (1 + livret_mensuel)
         livret_a.append({"date": pt["date"], "valeur": round(valeur_livret, 2)})
 
@@ -96,7 +96,7 @@ def simuler_dca(
     d1 = datetime.date.fromisoformat(date_fin)
     nb_annees = max((d1 - d0).days / 365.25, 0.01)
 
-    # CAGR — formule CDC §5.1 : (VF / capital_versé)^(1/n) − 1
+    # CAGR : formule CDC §5.1 : (VF / capital_versé)^(1/n) − 1
     cagr = ((vf / cv) ** (1 / nb_annees) - 1) * 100 if cv > 0 else 0.0
 
     return {
@@ -138,7 +138,7 @@ def projeter_dca_future(
         return None
 
     ter = max(ter or 0.0, 0.0)
-    # Taux mensuel équivalent composé — formule exacte, pas une approximation linéaire
+    # Taux mensuel équivalent composé : formule exacte, pas une approximation linéaire
     taux_mensuel   = (1 + taux_annuel) ** (1 / 12) - 1
     ter_mensuel    = ter / 12
     livret_mensuel = LIVRET_A_TAUX / 12
@@ -150,7 +150,7 @@ def projeter_dca_future(
 
     for mois in range(1, nb_mois + 1):
         # Net mensuel = (1 + taux_mensuel - ter_mensuel)
-        # Approximation de (1+r)*(1-f) avec erreur ~r×f par mois — négligeable
+        # Approximation de (1+r)*(1-f) avec erreur ~r×f par mois, négligeable
         valeur        = (valeur        + versement_mensuel) * (1 + taux_mensuel - ter_mensuel)
         valeur_livret = (valeur_livret + versement_mensuel) * (1 + livret_mensuel)
 
@@ -158,9 +158,9 @@ def projeter_dca_future(
             annee           = mois // 12
             capital_investi = capital_initial + versement_mensuel * mois
 
-            # Intérêts simples — capital initial : taux × années
+            # Intérêts simples, capital initial : taux × années
             is_initial = capital_initial * taux_annuel * annee
-            # Intérêts simples — versements : chaque versement m investit
+            # Intérêts simples, versements : chaque versement m investit
             # depuis le mois m jusqu'au mois n, soit (n-m) mois.
             # Somme = taux/12 × (0 + 1 + … + (n-1)) = taux/12 × (n-1)×n/2
             is_contrib = versement_mensuel * taux_annuel / 12 * (mois - 1) * mois / 2
@@ -199,7 +199,7 @@ def projeter_dca_future(
             "interets_composes":     round(interets_composes, 2),
             # CORRECTION : renommé depuis interets_composes_pct.
             # Ce ratio (gains / valeur_finale) mesure la part des intérêts dans
-            # la valeur finale — différent du taux de rendement (performance_cumulee_pct).
+            # la valeur finale, différent du taux de rendement (performance_cumulee_pct).
             "part_gains_dans_valeur_pct": round(interets_composes / vf * 100, 2) if vf > 0 else 0.0,
             "interets_simples":      round(interets_simples, 2),
             "interets_simples_pct":  round(interets_simples / vf_simples * 100, 2) if vf_simples > 0 else 0.0,

@@ -7,7 +7,7 @@ async function fetcher(url, options = {}) {
   try {
     res = await fetch(url, options)
   } catch {
-    throw new Error('Backend inaccessible — vérifiez que le serveur FastAPI tourne sur ' + API)
+    throw new Error('Backend inaccessible : vérifiez que le serveur FastAPI tourne sur ' + API)
   }
   if (!res.ok) throw new Error(`Erreur ${res.status} sur ${url}`)
   return res.json()
@@ -28,7 +28,7 @@ export const detailsETF = (ticker) =>
 export const rechercherETF = (q) =>
   fetcher(`${API}/search?q=${encodeURIComponent(q)}`)
 
-// CORRECTION : explorerInfoETF supprimé — doublon exact de rechercherETF.
+// CORRECTION : explorerInfoETF supprimé, doublon exact de rechercherETF.
 
 export const historiqueExplore = (tickerYf, dateDebut = '2015-01-01', dateFin = null) =>
   fetcher(`${API}/explore/${encodeURIComponent(tickerYf)}/historique?date_debut=${dateDebut}${dateFin ? `&date_fin=${dateFin}` : ''}`)

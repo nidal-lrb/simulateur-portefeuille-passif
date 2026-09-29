@@ -1,5 +1,5 @@
 """
-Tests unitaires — Module B (DCA).
+Tests unitaires : module B (DCA).
 Exécuter : pytest test_simulation.py -v
 """
 

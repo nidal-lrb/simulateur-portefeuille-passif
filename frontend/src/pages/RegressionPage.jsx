@@ -439,7 +439,7 @@ function RegressionChart({ result, showCI, showProjection, height = 360 }) {
   const histUp    = result.ic_upper || [];
   const histLo    = result.ic_lower || [];
 
-  // Bandes sigma — écart-type des résidus autour de la droite OLS
+  // Bandes sigma : écart-type des résidus autour de la droite OLS
   // ±1σ : 68 % des prix, ±2σ : 95 %, ±3σ : 99,7 % (sous hypothèse normale)
   const sig3Up = result.sigma3_upper || [];
   const sig3Lo = result.sigma3_lower || [];
@@ -530,7 +530,7 @@ function RegressionChart({ result, showCI, showProjection, height = 360 }) {
           <line x1={xAt(cutoff)} x2={xAt(cutoff)} y1={padding.top} y2={padding.top + innerH} stroke="var(--line-3)" strokeDasharray="2 4" />
         )}
 
-        {/* Bandes sigma — de l'extérieur vers l'intérieur pour superposition correcte */}
+        {/* Bandes sigma, de l'extérieur vers l'intérieur pour superposition correcte */}
           {sig3Up.length > 0 && (
             <path d={bandPath(sig3Lo, sig3Up, 0, cutoff)}
               fill="oklch(0.82 0.11 78 / 0.04)" stroke="none" />

@@ -19,7 +19,7 @@ class ETF(Base):
     indice_replique = Column(String)
     gestionnaire    = Column(String)
     ter             = Column(Float)
-    eligible_pea    = Column(Boolean, default=False)  # saisie manuelle — non disponible sur yfinance
+    eligible_pea    = Column(Boolean, default=False)  # saisie manuelle, non disponible sur yfinance
     is_halal        = Column(Boolean, default=False)  # détecté automatiquement via nom_long_yf
 
 
@@ -65,7 +65,7 @@ class ResultatRegression(Base):
     fenetre_annees      = Column(Integer)
     r2                  = Column(Float)
     pente_jour          = Column(Float)   # β1 en €/jour de trading
-    pente_annualisee_pct = Column(Float)  # %/an — ajout nécessaire pour le CDC
+    pente_annualisee_pct = Column(Float)  # %/an, ajout nécessaire pour le CDC
     p_value             = Column(Float)
-    beta0               = Column(Float)   # intercept — nécessaire pour reconstruire la droite
+    beta0               = Column(Float)   # intercept, nécessaire pour reconstruire la droite
     created_at          = Column(DateTime, server_default=func.now())

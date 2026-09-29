@@ -1,6 +1,6 @@
 """
-Module C — Régression linéaire OLS.
-Calcul pur, sans dépendances HTTP ou BDD — même philosophie que simulation.py.
+Module C : régression linéaire OLS.
+Calcul pur, sans dépendances HTTP ou BDD, même philosophie que simulation.py.
 
 X = numéro du jour de trading (0, 1, ..., N-1), conformément au CDC §5.3.
 Y = prix de clôture ajusté.
@@ -19,7 +19,7 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
     Paramètre
     ---------
     historique : liste de {"date": "YYYY-MM-DD", "prix_cloture_ajuste": float}
-                 triée chronologiquement — même format que telecharger_historique().
+                 triée chronologiquement, même format que telecharger_historique().
 
     Retourne None si données insuffisantes (< 30 points).
     """
@@ -48,7 +48,7 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
     # Sur séries financières on s'attend à DW << 2 (argument pédagogique CDC §2.4).
     dw = float(np.sum(np.diff(residuals) ** 2) / np.sum(residuals ** 2))
 
-    # Erreur standard des résidus — base du calcul des IC (formule OLS standard)
+    # Erreur standard des résidus : base du calcul des IC (formule OLS standard)
     sse = np.sum(residuals ** 2)
     s   = np.sqrt(sse / (n - 2))       # n-2 degrés de liberté pour OLS simple
     sxx = np.sum((x - x_mean) ** 2)
@@ -60,7 +60,7 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
     # Convention CDC §5.3 : on divise par le prix moyen (y_mean) de la fenêtre.
     pente_annualisee_pct = (slope * 252) / y_mean * 100
 
-    # Projection 12 mois — illustratif uniquement (mention obligatoire CDC §2.4).
+    # Projection 12 mois : illustratif uniquement (mention obligatoire CDC §2.4).
     n_proj = 252
     x_proj = np.arange(n, n + n_proj, dtype=float)
     y_proj = intercept + slope * x_proj
@@ -75,14 +75,14 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
     idx  = list(range(0, n, step))
 
     return {
-        # ── Métriques scalaires — tableau de synthèse CDC §5.3 ──────────
+        # ── Métriques scalaires : tableau de synthèse CDC §5.3 ──────────
         "beta0":                round(float(intercept), 4),
         "beta1":                round(float(slope), 4),
         "r2":                   round(float(r2), 4),
         "p_value":              float(p_value),
         "pente_annualisee_pct": round(float(pente_annualisee_pct), 2),
 
-        # ── Séries historiques — Graphique 1 (cours + droite + IC) ──────
+        # ── Séries historiques : graphique 1 (cours + droite + IC) ──────
         "dates":           [dates[i] for i in idx],
         "prix":            [round(float(y[i]),             2) for i in idx],
         "regression_line": [round(float(y_hat[i]),         2) for i in idx],
@@ -93,7 +93,7 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
         # Différent de l'IC sur la droite : ces bandes montrent où tombent
         # les prix réels (68 % / 95 % / 99,7 % sous hypothèse normale).
         # Pédagogiquement : illustre que les crises (2008, 2020) dépassent ±3σ,
-        # prouvant que le market timing est imprévisible — argument pro-DCA.
+        # prouvant que le market timing est imprévisible, argument pro-DCA.
         "sigma1_upper": [round(float(y_hat[i] + s),     2) for i in idx],
         "sigma1_lower": [round(float(y_hat[i] - s),     2) for i in idx],
         "sigma2_upper": [round(float(y_hat[i] + 2 * s), 2) for i in idx],
@@ -101,7 +101,7 @@ def compute_regression(historique: List[Dict]) -> Optional[Dict]:
         "sigma3_upper": [round(float(y_hat[i] + 3 * s), 2) for i in idx],
         "sigma3_lower": [round(float(y_hat[i] - 3 * s), 2) for i in idx],
 
-        # ── Résidus — Graphique 2 ────────────────────────────────────────
+        # ── Résidus : graphique 2 ────────────────────────────────────────
         "durbin_watson": round(dw, 4),
         "residus":       [round(float(residuals[i]), 2) for i in idx],
 
@@ -121,7 +121,7 @@ def _confidence_band(x_vals, x_mean, n, sxx, s, t_crit, y_hat_vals):
     Marge    = t_crit × SE(x)
 
     C'est l'IC sur la moyenne prédite (pas l'intervalle de prédiction ponctuelle).
-    Il s'élargit hors de la fenêtre historique — illustration directe de CDC §2.4.
+    Il s'élargit hors de la fenêtre historique : illustration directe de CDC §2.4.
     """
     se     = s * np.sqrt(1 / n + (x_vals - x_mean) ** 2 / sxx)
     margin = t_crit * se

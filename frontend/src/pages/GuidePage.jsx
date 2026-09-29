@@ -1,5 +1,5 @@
 /* ============================================================
-   TELOS · GuidePage — refonte complète
+   TELOS · GuidePage, refonte complète
    Structure : questions que se pose l'investisseur débutant,
    pas la logique d'un cours magistral.
    ============================================================ */
@@ -251,7 +251,7 @@ export default function GuidePage() {
         {/* ── Contenu ── */}
         <div style={{ maxWidth: 680, paddingBottom: 160 }}>
 
-          {/* 01 — Inflation */}
+          {/* 01 · Inflation */}
           <section id="guide-inflation" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Pourquoi est-ce que je perds de l'argent sans rien faire ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -271,7 +271,7 @@ export default function GuidePage() {
 
             <p style={{ fontSize: 14, color: 'var(--fg-1)', lineHeight: 1.7 }}>
               Le Livret A rapporte aujourd'hui 1,5 % par an. Si l'inflation est à 2,5 %,
-              vous perdez quand même 1 % de pouvoir d'achat chaque année — juste moins vite.
+              vous perdez quand même 1 % de pouvoir d'achat chaque année, juste moins vite.
               Pour vraiment préserver et faire fructifier votre argent, il faut viser un rendement
               supérieur à l'inflation sur le long terme.
             </p>
@@ -282,7 +282,7 @@ export default function GuidePage() {
             </Callout>
           </section>
 
-          {/* 02 — Intérêts composés */}
+          {/* 02 · Intérêts composés */}
           <section id="guide-compound" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>C'est quoi les intérêts composés ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -295,8 +295,8 @@ export default function GuidePage() {
             </p>
 
             <Comparaison
-              gauche={{ label: 'Intérêts simples — 7 %/an', valeur: '24 000 €', sub: 'gain sur 10 000 € · 20 ans', color: 'var(--info)' }}
-              droite={{ label: 'Intérêts composés — 7 %/an', valeur: '38 697 €', sub: 'gain sur 10 000 € · 20 ans', color: 'var(--accent)' }}
+              gauche={{ label: 'Intérêts simples · 7 %/an', valeur: '24 000 €', sub: 'gain sur 10 000 € · 20 ans', color: 'var(--info)' }}
+              droite={{ label: 'Intérêts composés · 7 %/an', valeur: '38 697 €', sub: 'gain sur 10 000 € · 20 ans', color: 'var(--accent)' }}
             />
 
             <p style={{ fontSize: 14, color: 'var(--fg-1)', lineHeight: 1.7, marginBottom: 16 }}>
@@ -316,7 +316,7 @@ export default function GuidePage() {
             <SimulateurCompound />
           </section>
 
-          {/* 03 — ETF */}
+          {/* 03 · ETF */}
           <section id="guide-etf" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Comment investir sans choisir des actions ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -328,9 +328,9 @@ export default function GuidePage() {
               vous achetez un ETF qui contient déjà toutes ces entreprises proportionnellement à leur taille.
             </p>
 
-            <Callout type="info" label="Exemple : CW8 — Amundi MSCI World">
+            <Callout type="info" label="Exemple : CW8 · Amundi MSCI World">
               Avec 200 €, vous devenez propriétaire d'une fraction des 1 500 plus grandes entreprises mondiales.
-              Apple, Microsoft, Amazon, Nestlé, Toyota, Samsung — toutes dans un seul achat.
+              Apple, Microsoft, Amazon, Nestlé, Toyota, Samsung : toutes dans un seul achat.
               Si Apple monte mais Toyota baisse, votre ETF suit la moyenne. Vous n'avez pas besoin
               d'avoir raison sur chaque entreprise.
             </Callout>
@@ -363,7 +363,7 @@ export default function GuidePage() {
             </Callout>
           </section>
 
-          {/* 04 — DCA */}
+          {/* 04 · DCA */}
           <section id="guide-dca" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Quel est le bon moment pour investir ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -372,7 +372,7 @@ export default function GuidePage() {
             <p style={{ fontSize: 14, color: 'var(--fg-1)', lineHeight: 1.7, marginBottom: 16 }}>
               Le DCA (Dollar-Cost Averaging, ou investissement programmé) consiste à investir
               un montant fixe chaque mois, peu importe ce que fait le marché.
-              C'est l'opposé du market timing — essayer de deviner le bon moment.
+              C'est l'opposé du market timing, qui consiste à essayer de deviner le bon moment.
             </p>
 
             <Callout type="danger" label="Le problème du timing">
@@ -389,8 +389,8 @@ export default function GuidePage() {
             </p>
 
             <Comparaison
-              gauche={{ label: 'Investissement unique — Jan 2020', valeur: '-33 %', sub: 'en mars 2020 (Covid)', color: 'var(--neg)' }}
-              droite={{ label: 'DCA mensuel — 2020', valeur: '+18 %', sub: 'sur la même année', color: 'var(--pos)' }}
+              gauche={{ label: 'Investissement unique · jan 2020', valeur: '-33 %', sub: 'en mars 2020 (Covid)', color: 'var(--neg)' }}
+              droite={{ label: 'DCA mensuel · 2020', valeur: '+18 %', sub: 'sur la même année', color: 'var(--pos)' }}
             />
 
             <p style={{ fontSize: 14, color: 'var(--fg-1)', lineHeight: 1.7 }}>
@@ -407,7 +407,7 @@ export default function GuidePage() {
             </Callout>
           </section>
 
-          {/* 05 — Frais */}
+          {/* 05 · Frais */}
           <section id="guide-frais" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Est-ce que 0,20 % de frais, ça change vraiment quelque chose ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -419,7 +419,7 @@ export default function GuidePage() {
               est l'une des décisions financières les plus importantes de votre vie.
             </p>
 
-            <Callout type="danger" label="Sur 30 ans — 200 €/mois — 7 % brut">
+            <Callout type="danger" label="Sur 30 ans · 200 €/mois · 7 % brut">
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 8 }}>
                 <div>
                   <div style={{ fontSize: 11, color: 'var(--fg-3)', fontFamily: 'var(--font-mono)', marginBottom: 4 }}>ETF · TER 0,20 %</div>
@@ -431,7 +431,7 @@ export default function GuidePage() {
                 </div>
               </div>
               <div style={{ marginTop: 12, fontSize: 13, color: 'var(--fg-1)' }}>
-                <strong>54 000 € de différence</strong> — uniquement à cause des frais. Vous avez versé exactement
+                <strong>54 000 € de différence</strong>, uniquement à cause des frais. Vous avez versé exactement
                 la même somme. Le marché a fait exactement la même performance. Les frais ont mangé le reste.
               </div>
             </Callout>
@@ -464,7 +464,7 @@ export default function GuidePage() {
             </Callout>
           </section>
 
-          {/* 06 — PEA */}
+          {/* 06 · PEA */}
           <section id="guide-pea" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Comment payer moins d'impôts sur mes gains ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>
@@ -484,8 +484,8 @@ export default function GuidePage() {
 
             <Callout type="success" label="Sur 100 000 € de gains">
               Compte-titres : vous payez <strong>30 000 €</strong> d'impôts.
-              PEA : vous payez <strong>17 200 €</strong>. Soit <strong>12 800 € économisés</strong>
-              — juste parce que vous avez mis votre argent au bon endroit.
+              PEA : vous payez <strong>17 200 €</strong>. Soit <strong>12 800 € économisés</strong>,
+              juste parce que vous avez mis votre argent au bon endroit.
             </Callout>
 
             <p style={{ fontSize: 14, color: 'var(--fg-1)', lineHeight: 1.7, marginBottom: 12 }}>
@@ -520,7 +520,7 @@ export default function GuidePage() {
             </Callout>
           </section>
 
-          {/* 07 — Démarrer */}
+          {/* 07 · Démarrer */}
           <section id="guide-demarrer" style={{ marginBottom: 64, scrollMarginTop: 20 }}>
             <Q>Par où je commence concrètement ?</Q>
             <h2 style={{ fontSize: 22, fontWeight: 600, margin: '0 0 16px', letterSpacing: '-0.015em' }}>

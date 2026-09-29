@@ -1,5 +1,5 @@
 """
-Tests unitaires — Projection DCA future.
+Tests unitaires : projection DCA future.
 Exécuter : pytest test_projection.py -v
 """
 
@@ -22,7 +22,7 @@ class TestProjetterDCAFutur:
 
     def test_taux_eleve_produit_plus(self):
         """
-        CORRECTION — remplace test_optimiste_superieur_central.
+        CORRECTION : remplace test_optimiste_superieur_central.
         projeter_dca_future calcule un seul scénario (pas 3).
         On vérifie que taux+4% produit une valeur finale supérieure à taux-4%.
         """
@@ -32,7 +32,7 @@ class TestProjetterDCAFutur:
 
     def test_ter_zero_pas_d_erosion(self):
         """
-        CORRECTION — remplace test_ter_zero_egal_sans_frais.
+        CORRECTION : remplace test_ter_zero_egal_sans_frais.
         La clé valeur_sans n'existe pas dans les points de projection.
         On vérifie que TER=0 ne réduit pas la valeur finale par rapport au capital.
         """
@@ -41,7 +41,7 @@ class TestProjetterDCAFutur:
 
     def test_ter_reduit_valeur(self):
         """
-        CORRECTION — remplace la version avec pt["valeur_sans"] inexistante.
+        CORRECTION : remplace la version avec pt["valeur_sans"] inexistante.
         On compare deux appels : avec TER=0 vs TER=1%.
         """
         sans_frais = projeter_dca_future(0, 200, 0.07, 0.0,  10)
@@ -62,7 +62,7 @@ class TestProjetterDCAFutur:
 
     def test_capital_initial_augmente_valeur(self):
         """
-        CORRECTION — remplace valeur_centrale par valeur_finale.
+        CORRECTION : remplace valeur_centrale par valeur_finale.
         Un capital initial > 0 produit une valeur finale plus haute.
         """
         sans = projeter_dca_future(0,     200, 0.07, 0.002, 10)
@@ -82,7 +82,7 @@ class TestProjetterDCAFutur:
 
     def test_versement_zero(self):
         """
-        CORRECTION — capital_total_investi inclut capital_initial.
+        CORRECTION : capital_total_investi inclut capital_initial.
         Avec versement=0 et capital_initial=10000, capital_total_investi = 10000.
         """
         r = projeter_dca_future(10000, 0, 0.07, 0.0, 5)
