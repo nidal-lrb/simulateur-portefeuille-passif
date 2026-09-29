@@ -1,0 +1,677 @@
+[
+  {
+    "ticker": "CW8",
+    "ticker_yf": "CW8.PA",
+    "nom": "Amundi MSCI World Swap PEA",
+    "indice_replique": "MSCI World",
+    "ter": 0.0038,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "PSP5",
+    "ticker_yf": "PSP5.PA",
+    "nom": "Amundi PEA S&P 500 UCITS ETF Acc",
+    "indice_replique": "S&P 500",
+    "ter": 0.0015,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "ESE",
+    "ticker_yf": "ESE.PA",
+    "nom": "BNP Paribas Easy S&P 500 UCITS ETF EUR C",
+    "indice_replique": "S&P 500",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "OBLI",
+    "ticker_yf": "OBLI.PA",
+    "nom": "Lyxor Obligations d'État Euro",
+    "indice_replique": "MTS Euro Government Bond",
+    "ter": 0.0017,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "WPEA",
+    "ticker_yf": "WPEA.PA",
+    "nom": "iShares MSCI World Swap PEA",
+    "indice_replique": "MSCI World",
+    "ter": 0.0025,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "EWLD",
+    "ticker_yf": "EWLD.PA",
+    "nom": "Amundi MSCI World Swap Dist PEA",
+    "indice_replique": "MSCI World",
+    "ter": 0.0038,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "IWDA",
+    "ticker_yf": "IWDA.AS",
+    "nom": "iShares Core MSCI World UCITS ETF",
+    "indice_replique": "MSCI World",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "HMWO",
+    "ticker_yf": "HMWO.L",
+    "nom": "HSBC MSCI World UCITS ETF",
+    "indice_replique": "MSCI World",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XDWD",
+    "ticker_yf": "XDWD.DE",
+    "nom": "Xtrackers MSCI World Swap UCITS ETF",
+    "indice_replique": "MSCI World",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VWCE",
+    "ticker_yf": "VWCE.DE",
+    "nom": "Vanguard FTSE All-World UCITS ETF Acc",
+    "indice_replique": "FTSE All-World",
+    "ter": 0.0022,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VWRL",
+    "ticker_yf": "VWRL.AS",
+    "nom": "Vanguard FTSE All-World UCITS ETF Dist",
+    "indice_replique": "FTSE All-World",
+    "ter": 0.0022,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "ACWI",
+    "ticker_yf": "ACWI.PA",
+    "nom": "Amundi MSCI All Country World UCITS ETF EUR Acc",
+    "indice_replique": "MSCI ACWI",
+    "ter": 0.0045,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SPYY",
+    "ticker_yf": "SPYY.DE",
+    "nom": "SPDR MSCI ACWI UCITS ETF USD Acc",
+    "indice_replique": "MSCI ACWI",
+    "ter": 0.0012,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SP5C",
+    "ticker_yf": "SP5C.PA",
+    "nom": "Amundi Core S&P 500 Swap UCITS ETF Acc",
+    "indice_replique": "S&P 500",
+    "ter": 0.0015,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "SP5",
+    "ticker_yf": "SP5.PA",
+    "nom": "Amundi S&P 500 UCITS ETF PEA",
+    "indice_replique": "S&P 500",
+    "ter": 0.0015,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "CSPX",
+    "ticker_yf": "CSPX.L",
+    "nom": "iShares Core S&P 500 UCITS ETF",
+    "indice_replique": "S&P 500",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SXR8",
+    "ticker_yf": "SXR8.DE",
+    "nom": "iShares Core S&P 500 UCITS ETF (Acc)",
+    "indice_replique": "S&P 500",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VUAA",
+    "ticker_yf": "VUAA.DE",
+    "nom": "Vanguard S&P 500 UCITS ETF Acc",
+    "indice_replique": "S&P 500",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VUSA",
+    "ticker_yf": "VUSA.AS",
+    "nom": "Vanguard S&P 500 UCITS ETF Dist",
+    "indice_replique": "S&P 500",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "PANX",
+    "ticker_yf": "PANX.PA",
+    "nom": "Amundi Nasdaq-100 PEA UCITS ETF",
+    "indice_replique": "NASDAQ-100",
+    "ter": 0.0023,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "CNDX",
+    "ticker_yf": "CNDX.L",
+    "nom": "iShares Nasdaq 100 UCITS ETF",
+    "indice_replique": "NASDAQ-100",
+    "ter": 0.0033,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XNAS",
+    "ticker_yf": "XNAS.DE",
+    "nom": "Xtrackers Nasdaq 100 Swap UCITS ETF",
+    "indice_replique": "NASDAQ-100",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "ESPO",
+    "ticker_yf": "ESPO.L",
+    "nom": "VanEck Video Gaming and eSports UCITS ETF",
+    "indice_replique": "MVIS Global Video Gaming & eSports",
+    "ter": 0.0055,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "LYP6",
+    "ticker_yf": "LYP6.DE",
+    "nom": "Amundi Core Stoxx Europe 600 UCITS ETF Acc",
+    "indice_replique": "STOXX Europe 600",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "EXSA",
+    "ticker_yf": "EXSA.DE",
+    "nom": "iShares STOXX Europe 600 UCITS ETF (Dist)",
+    "indice_replique": "STOXX Europe 600",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "EUNK",
+    "ticker_yf": "EUNK.DE",
+    "nom": "iShares Core MSCI Europe UCITS ETF Acc",
+    "indice_replique": "MSCI Europe",
+    "ter": 0.0012,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VGEU",
+    "ticker_yf": "VGEU.DE",
+    "nom": "Vanguard FTSE Developed Europe UCITS ETF",
+    "indice_replique": "FTSE Developed Europe",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VERX",
+    "ticker_yf": "VERX.DE",
+    "nom": "Vanguard FTSE Developed Europe ex UK UCITS ETF Dist",
+    "indice_replique": "FTSE Developed Europe ex UK",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "MEUR",
+    "ticker_yf": "MEUR.PA",
+    "nom": "Amundi MSCI Europe UCITS ETF PEA",
+    "indice_replique": "MSCI Europe",
+    "ter": 0.0015,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "C50",
+    "ticker_yf": "C50.PA",
+    "nom": "Amundi EURO STOXX 50 UCITS ETF-C",
+    "indice_replique": "EURO STOXX 50",
+    "ter": 0.0009,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "EXW1",
+    "ticker_yf": "EXW1.DE",
+    "nom": "iShares Core EURO STOXX 50 UCITS ETF (DE)",
+    "indice_replique": "EURO STOXX 50",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XESC",
+    "ticker_yf": "XESC.DE",
+    "nom": "Xtrackers Euro Stoxx 50 UCITS ETF 1C",
+    "indice_replique": "EURO STOXX 50",
+    "ter": 0.0009,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SXRT",
+    "ticker_yf": "SXRT.DE",
+    "nom": "iShares Core EURO STOXX 50 ETF EUR Acc",
+    "indice_replique": "EURO STOXX 50",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "CAC",
+    "ticker_yf": "CAC.PA",
+    "nom": "Amundi CAC 40 UCITS ETF Dist",
+    "indice_replique": "CAC 40",
+    "ter": 0.0025,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "AEEM",
+    "ticker_yf": "AEEM.PA",
+    "nom": "Amundi MSCI Emerging Markets UCITS ETF",
+    "indice_replique": "MSCI Emerging Markets",
+    "ter": 0.0014,
+    "eligible_pea": true,
+    "is_halal": false
+  },
+  {
+    "ticker": "EIMI",
+    "ticker_yf": "EIMI.L",
+    "nom": "iShares Core MSCI EM IMI UCITS ETF",
+    "indice_replique": "MSCI Emerging Markets IMI",
+    "ter": 0.0018,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VFEM",
+    "ticker_yf": "VFEM.L",
+    "nom": "Vanguard FTSE Emerging Markets UCITS ETF",
+    "indice_replique": "FTSE Emerging Markets",
+    "ter": 0.0022,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XMEM",
+    "ticker_yf": "XMEM.DE",
+    "nom": "Xtrackers MSCI Emerging Markets Swap UCITS ETF",
+    "indice_replique": "MSCI Emerging Markets",
+    "ter": 0.0018,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IUS3",
+    "ticker_yf": "IUS3.DE",
+    "nom": "iShares Core S&P SmallCap 600 UCITS ETF",
+    "indice_replique": "S&P SmallCap 600",
+    "ter": 0.004,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XUTD",
+    "ticker_yf": "XUTD.DE",
+    "nom": "Xtrackers II US Treasuries UCITS ETF 1D",
+    "indice_replique": "Bloomberg US Treasury Bond",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IJPA",
+    "ticker_yf": "IJPA.L",
+    "nom": "iShares Core MSCI Japan IMI UCITS ETF",
+    "indice_replique": "MSCI Japan IMI",
+    "ter": 0.0012,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XDJP",
+    "ticker_yf": "XDJP.DE",
+    "nom": "Xtrackers Nikkei 225 UCITS ETF",
+    "indice_replique": "Nikkei 225",
+    "ter": 0.0009,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IUSB",
+    "ticker_yf": "IUSB.DE",
+    "nom": "iShares Global Corp Bond UCITS ETF",
+    "indice_replique": "Bloomberg Global Corp Bond",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XGLE",
+    "ticker_yf": "XGLE.DE",
+    "nom": "Xtrackers II EUR Govt Bond UCITS ETF",
+    "indice_replique": "Bloomberg Euro Govt Bond",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "AGGH",
+    "ticker_yf": "AGGH.L",
+    "nom": "iShares Core Global Aggregate Bond UCITS ETF",
+    "indice_replique": "Bloomberg Global Aggregate Bond",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "CSH2",
+    "ticker_yf": "CSH2.PA",
+    "nom": "Amundi ETF Govies 0-6m Euro Investment Grade",
+    "indice_replique": "FTSE MTS Eurozone Govies 0-6m",
+    "ter": 0.0007,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XEON",
+    "ticker_yf": "XEON.DE",
+    "nom": "Xtrackers II EUR Overnight Rate Swap UCITS ETF",
+    "indice_replique": "€STR (Euro Overnight Rate)",
+    "ter": 0.001,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SGLD",
+    "ticker_yf": "SGLD.L",
+    "nom": "Invesco Physical Gold ETC",
+    "indice_replique": "Or physique (LBMA Gold Price)",
+    "ter": 0.0012,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "PHAU",
+    "ticker_yf": "PHAU.L",
+    "nom": "WisdomTree Physical Gold ETC",
+    "indice_replique": "Or physique (LBMA Gold Price)",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SXRC",
+    "ticker_yf": "SXRC.DE",
+    "nom": "iShares Diversified Commodity Swap UCITS ETF",
+    "indice_replique": "Bloomberg Commodity Index",
+    "ter": 0.0019,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IQQP",
+    "ticker_yf": "IQQP.DE",
+    "nom": "iShares European Property Yield UCITS ETF",
+    "indice_replique": "FTSE EPRA/NAREIT Europe",
+    "ter": 0.004,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IUSP",
+    "ticker_yf": "IUSP.L",
+    "nom": "iShares US Property Yield UCITS ETF",
+    "indice_replique": "FTSE EPRA/NAREIT US",
+    "ter": 0.004,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "ESIH",
+    "ticker_yf": "ESIH.DE",
+    "nom": "iShares MSCI Europe Health Care UCITS ETF",
+    "indice_replique": "MSCI Europe Health Care",
+    "ter": 0.0018,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "ESIN",
+    "ticker_yf": "ESIN.DE",
+    "nom": "iShares MSCI Europe Industrials UCITS ETF",
+    "indice_replique": "MSCI Europe Industrials",
+    "ter": 0.0018,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "EXV1",
+    "ticker_yf": "EXV1.DE",
+    "nom": "iShares STOXX Europe 600 Banks UCITS ETF",
+    "indice_replique": "STOXX Europe 600 Banks",
+    "ter": 0.0046,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "LYBK",
+    "ticker_yf": "LYBK.DE",
+    "nom": "Amundi Euro Stoxx Banks UCITS ETF Acc",
+    "indice_replique": "EURO STOXX Banks",
+    "ter": 0.003,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "HEAL",
+    "ticker_yf": "HEAL.L",
+    "nom": "iShares Global Healthcare UCITS ETF",
+    "indice_replique": "MSCI World Health Care",
+    "ter": 0.0025,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "WTAI",
+    "ticker_yf": "WTAI.L",
+    "nom": "WisdomTree AI UCITS ETF",
+    "indice_replique": "WisdomTree Artificial Intelligence",
+    "ter": 0.004,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "QDVE",
+    "ticker_yf": "QDVE.DE",
+    "nom": "iShares S&P 500 Information Technology Sector UCITS ETF",
+    "indice_replique": "S&P 500 Information Technology",
+    "ter": 0.0015,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "XDWT",
+    "ticker_yf": "XDWT.DE",
+    "nom": "Xtrackers MSCI World Consumer Discretionary UCITS ETF",
+    "indice_replique": "MSCI World Consumer Discretionary",
+    "ter": 0.0025,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "EUDF",
+    "ticker_yf": "EUDF.DE",
+    "nom": "WisdomTree Europe Defence UCITS ETF",
+    "indice_replique": "WisdomTree Europe Defence",
+    "ter": 0.004,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "SUSW",
+    "ticker_yf": "SUSW.L",
+    "nom": "iShares MSCI World SRI UCITS ETF",
+    "indice_replique": "MSCI World SRI",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IUSK",
+    "ticker_yf": "IUSK.DE",
+    "nom": "iShares MSCI Europe SRI UCITS ETF",
+    "indice_replique": "MSCI Europe SRI",
+    "ter": 0.002,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "VHYL",
+    "ticker_yf": "VHYL.L",
+    "nom": "Vanguard FTSE All-World High Dividend Yield UCITS ETF",
+    "indice_replique": "FTSE All-World High Dividend Yield",
+    "ter": 0.0029,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IDVY",
+    "ticker_yf": "IDVY.L",
+    "nom": "iShares DJ Asia Pacific Select Div 30 UCITS ETF",
+    "indice_replique": "Dow Jones Asia/Pacific Select Dividend 30",
+    "ter": 0.0031,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "QDVW",
+    "ticker_yf": "QDVW.DE",
+    "nom": "iShares MSCI World Quality Dividend UCITS ETF",
+    "indice_replique": "MSCI World Quality Dividend",
+    "ter": 0.0038,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "EXSH",
+    "ticker_yf": "EXSH.DE",
+    "nom": "iShares STOXX Europe Select Dividend 30 UCITS ETF",
+    "indice_replique": "STOXX Europe Select Dividend 30",
+    "ter": 0.0031,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IWMO",
+    "ticker_yf": "IWMO.L",
+    "nom": "iShares Edge MSCI World Momentum Factor UCITS ETF",
+    "indice_replique": "MSCI World Momentum",
+    "ter": 0.003,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IWQU",
+    "ticker_yf": "IWQU.L",
+    "nom": "iShares Edge MSCI World Quality Factor UCITS ETF",
+    "indice_replique": "MSCI World Quality",
+    "ter": 0.003,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "IWVL",
+    "ticker_yf": "IWVL.L",
+    "nom": "iShares Edge MSCI World Value Factor UCITS ETF",
+    "indice_replique": "MSCI World Value",
+    "ter": 0.003,
+    "eligible_pea": false,
+    "is_halal": false
+  },
+  {
+    "ticker": "ISDW",
+    "ticker_yf": "ISDW.L",
+    "nom": "iShares MSCI World Islamic UCITS ETF USD (Dist)",
+    "indice_replique": "MSCI World Islamic",
+    "ter": 0.006,
+    "eligible_pea": false,
+    "is_halal": true
+  },
+  {
+    "ticker": "HIWO",
+    "ticker_yf": "HIWO.L",
+    "nom": "HSBC MSCI World Islamic Screened UCITS ETF USD Acc",
+    "indice_replique": "MSCI World Islamic ESG Screened",
+    "ter": 0.003,
+    "eligible_pea": false,
+    "is_halal": true
+  },
+  {
+    "ticker": "IEMS",
+    "ticker_yf": "IEMS.L",
+    "nom": "iShares MSCI Emerging Markets Islamic UCITS ETF",
+    "indice_replique": "MSCI Emerging Markets Islamic",
+    "ter": 0.0085,
+    "eligible_pea": false,
+    "is_halal": true
+  },
+  {
+    "ticker": "ISUS",
+    "ticker_yf": "ISUS.L",
+    "nom": "iShares MSCI USA Islamic UCITS ETF",
+    "indice_replique": "MSCI USA Islamic",
+    "ter": 0.005,
+    "eligible_pea": false,
+    "is_halal": true
+  },
+  {
+    "ticker": "AMAL",
+    "ticker_yf": "AMAL.L",
+    "nom": "Almalia Sanlam Active Shariah Global Equity UCITS ETF",
+    "indice_replique": "Gestion active Shariah (global)",
+    "ter": 0.0099,
+    "eligible_pea": false,
+    "is_halal": true
+  }
+]
